@@ -1,9 +1,12 @@
 import { ArrowRight, Github, Linkedin, Mail } from "lucide-react";
 import { motion } from "motion/react";
 import * as React from "react";
+import { useScroll } from "../context/ScrollContext";
 import { Button } from "./ui/Button";
 
 export const Hero = React.forwardRef<HTMLElement>((_, ref) => {
+  const { scrollToSection } = useScroll();
+  
   return (
     <section ref={ref} className="relative min-h-screen flex items-center justify-center pt-20 pb-24 lg:pb-0 overflow-hidden">
       {/* Background Elements */}
@@ -104,11 +107,11 @@ export const Hero = React.forwardRef<HTMLElement>((_, ref) => {
               transition={{ duration: 0.5, delay: 0.3 }}
               className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 mb-16"
             >
-              <Button size="lg" className="group w-full sm:w-auto">
+              <Button size="lg" className="group w-full sm:w-auto" onClick={() => scrollToSection("projects")}>
                 View Projects
                 <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
               </Button>
-              <Button variant="outline" size="lg" className="w-full sm:w-auto">
+              <Button variant="outline" size="lg" className="w-full sm:w-auto" onClick={() => scrollToSection("contact")}>
                 Contact Me
               </Button>
             </motion.div>
