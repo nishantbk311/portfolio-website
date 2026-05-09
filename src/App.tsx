@@ -4,11 +4,11 @@
  */
 
 import { BrowserRouter } from "react-router-dom";
-import { ThemeProvider } from "./context/ThemeContext";
-import { ScrollProvider } from "./context/ScrollContext";
-import { Navbar } from "./components/Navbar";
-import { Footer } from "./components/Footer";
-import { AppRoutes } from "./AppRoutes";
+import { ThemeProvider } from "./context/ThemeContext.tsx";
+import { ScrollProvider } from "./context/ScrollContext.tsx";
+import { Navbar } from "./components/Navbar.tsx";
+import { Footer } from "./components/Footer.tsx";
+import { AppRoutes } from "./AppRoutes.tsx";
 
 export default function App() {
   return (
