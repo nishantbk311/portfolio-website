@@ -1,6 +1,7 @@
 import { ArrowRight, Github, Linkedin, Mail } from "lucide-react";
 import { motion } from "motion/react";
 import * as React from "react";
+import meImage from "../assets/me.png";
 import { useScroll } from "../context/ScrollContext";
 import { Button } from "./ui/Button";
 
@@ -69,10 +70,9 @@ export const Hero = React.forwardRef<HTMLElement>((_, ref) => {
                 <div className="absolute inset-8 md:inset-12 rounded-3xl overflow-hidden glass p-2 [backface-visibility:hidden]">
                   <div className="w-full h-full rounded-2xl overflow-hidden">
                     <img 
-                      src="https://picsum.photos/seed/developer/800/800" 
+                      src={meImage}
                       alt="Developer Profile Front" 
                       className="w-full h-full object-cover"
-                      referrerPolicy="no-referrer"
                     />
                   </div>
                 </div>
@@ -159,10 +159,9 @@ export const Hero = React.forwardRef<HTMLElement>((_, ref) => {
               <div className="absolute inset-12 rounded-3xl overflow-hidden glass p-2 [backface-visibility:hidden]">
                 <div className="w-full h-full rounded-2xl overflow-hidden">
                   <img 
-                    src="https://picsum.photos/seed/developer/800/800" 
+                    src={meImage}
                     alt="Developer Profile Front" 
                     className="w-full h-full object-cover"
-                    referrerPolicy="no-referrer"
                   />
                 </div>
               </div>

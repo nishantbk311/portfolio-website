@@ -170,7 +170,7 @@ export function Navbar() {
                 <Mail />
               </a>
             </div>
-            <a href="/resume.pdf" target="_blank" rel="noopener noreferrer" className="w-full">
+            <a href="/Resume.pdf" target="_blank" rel="noopener noreferrer" className="w-full">
               <Button variant="primary" className="w-full">
                 Resume
               </Button>
